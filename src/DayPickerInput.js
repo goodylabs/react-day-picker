@@ -307,9 +307,9 @@ export default class DayPickerInput extends React.Component {
     this.setState(state => ({
       showOverlay: true,
       month: month || state.month,
-    }, () => {
+    }), () => {
       if (onDayPickerShow) onDayPickerShow();
-    }));
+    });
   }
 
   /**
